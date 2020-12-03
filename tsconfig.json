@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    // import add from './add.js'허용
+    "allowJs": true,
+    // 모든 선언파일(*.d.ts)의 유형검사를 건너뛸지 여부
+    "skipLibCheck": false,
+    //  import React from 'react' 로 사용하기위해 true(not import * as react)
+    "esModuleInterop": true,
+    // export default로 사용하게 해주는것(import * as _ from 'lodash' -> import _ from 'lodash' 로 사용하게 해줌)
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    // 각파일을 별도의 모듈로 변환
+    // "isolatedModules": true,
+    // 결과파일을 저장하지않음
+    // 타입파일들 위치
+    "typeRoots": ["./types"],
+    "jsx": "react",
+    // "diagnostics": true,
+    // "declarationMap": true,
+    //
+    // "sourceMap": true,
+    // 사용하지 않는 로걸변수 error발생
+    "noUnusedLocals": true,
+    // ts프로젝트를 빠르게 찾기위한 옵션()
+    // "composite": true,
+    // 이전 컴파일에서 디크스의파일로 정보를 읽어 증분 컴파일 활성화(이전에 빌드된, 아직까지 최신 상태인 구성 요소는 다시 빌드하지 않는 것이 중요)
+    // composite:true이면 true
+    "incremental": true
+    // "noUnusedParameters": true,  // 사용안된 파라미터에 대한 오류 보고 여부
+    // removeComments: true // 모든 주석제거
+    // allowUnreachableCode:true // // 도달 불가능한 코드에 대한 허용 여부.
+    // importHelpers:false // 중복코드제거
+    // noFallthroughCasesInSwitch: true // 잘못 적힌 switch문에대한 에러발생
+    // preserveConstEnums:false //본래 컴파일 하는동안 완전히 제거되어 성능과 메모리상 이점을 얻기위해
+    // const enum형 선언은 지우고 코드상에 직접 맵핑되는데 이 옵션을 활성화시
+    // const enum형 선언을 지우지 않는다
+  },
+  "exclude": ["node_modules"],
+  "include": ["src"]
+}
